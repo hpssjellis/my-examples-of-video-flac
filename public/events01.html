@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Event Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
+        <!-- Problem Description -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Button Click Challenge: Events</h1>
+        <p class="text-gray-600 mb-6">
+            Click the "Change Message" button below. You'll notice that nothing happens! The code is almost complete, but it's missing the crucial step to connect the button's action to the function that changes the message. Your challenge is to correctly implement the **Events (E)** component.
+        </p>
+
+        <!-- User Interface -->
+        <div class="flex flex-col items-center gap-4">
+            <button
+                id="changeMessageButton"
+                class="w-full bg-red-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-red-700 transition-colors duration-200 transform hover:scale-105"
+            >
+                Change Message
+            </button>
+            <p id="displayMessage" class="mt-4 text-xl font-semibold text-gray-700">
+                This message will change!
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // --- VIDEO-FLAC Challenge: Events (E) ---
+
+        // V - Variables: Get references to our HTML elements.
+        const changeMessageButton = document.getElementById('changeMessageButton');
+        const displayMessageElement = document.getElementById('displayMessage');
+
+        // F - Functions: A function that defines what should happen when the button is clicked.
+        function updateMessage() {
+            displayMessageElement.textContent = "Message Changed Successfully!";
+            displayMessageElement.classList.add('text-green-600'); // Add a success color
+            displayMessageElement.classList.remove('text-gray-700'); // Remove default color
+        }
+
+        // I - Input: The button click is the intended input.
+
+        // O - Output: Changing the text content of 'displayMessageElement'.
+
+        // D - Decisions: (Not directly missing, but could be used for more complex logic)
+
+        // E - Events: THIS IS THE MISSING PART!
+        // The 'updateMessage' function exists, but it's never called when the button is clicked.
+        // You need to add an event listener here to connect the button's 'click' event
+        // to the 'updateMessage' function.
+
+        // L - Loops: Not directly used here.
+
+        // A - Arrays: Not directly used here.
+
+        // C - Classes: Not used here.
+
+        // Your task: Fix the "E" component (Events) by adding the necessary code
+        // to make the 'changeMessageButton' trigger the 'updateMessage' function when clicked!
+    </script>
+</body>
+</html>
