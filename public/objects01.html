@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Display</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
+        <!-- Problem Description -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">User Profile Challenge: Objects</h1>
+        <p class="text-gray-600 mb-6">
+            Click "Display Profile" to see user details. Currently, the user's first name, last name, and email are stored in separate variables. This works, but it's not ideal for managing related pieces of data. Your challenge is to introduce the **Objects (O)** component to group these variables into a single, organized structure.
+        </p>
+
+        <!-- User Interface -->
+        <div class="flex flex-col items-center gap-4">
+            <button
+                id="displayProfileButton"
+                class="w-full bg-teal-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-teal-700 transition-colors duration-200 transform hover:scale-105"
+            >
+                Display Profile
+            </button>
+            <div class="mt-4 w-full text-left p-4 bg-gray-100 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Profile Details:</h2>
+                <p id="profileDisplay" class="text-lg text-gray-700">
+                    Click the button to load profile...
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- VIDEO-FLAC Challenge: Objects (O) ---
+
+        // V - Variables: Here are the individual variables for user data.
+        // Your task is to replace these with a single JavaScript Object.
+        let userFirstName = "Alice";
+        let userLastName = "Smith";
+        let userEmail = "alice.smith@example.com";
+
+        const displayProfileButton = document.getElementById('displayProfileButton');
+        const profileDisplayElement = document.getElementById('profileDisplay');
+
+        // F - Functions: A function to display the user profile.
+        function displayUserProfile() {
+            // I - Input: The static variables above serve as our input data.
+
+            // O - Output: Displaying the profile details.
+            // Currently, it accesses individual variables. After your change, it should
+            // access properties of a single user object.
+            profileDisplayElement.innerHTML = `
+                <strong>Name:</strong> ${userFirstName} ${userLastName}<br>
+                <strong>Email:</strong> ${userEmail}
+            `;
+
+            // D - Decisions: (Not directly missing, but could be used for validation or formatting)
+
+            // E - Events: Handled by the event listener below.
+
+            // O - Objects: THIS IS THE MISSING PART!
+            // Instead of separate variables like userFirstName, userLastName, userEmail,
+            // you should create ONE JavaScript object (e.g., 'userProfile') that holds
+            // all these properties. Then, update the 'profileDisplayElement.innerHTML'
+            // to access these properties from your new object.
+
+            // L - Loops: Not directly used here.
+
+            // A - Arrays: Not directly used here.
+
+            // C - Classes: Not used here, a simple object literal is sufficient.
+        }
+
+        // E - Events: Listen for a click event on the button.
+        displayProfileButton.addEventListener('click', displayUserProfile);
+
+        // Your task: Fix the "O" component (Objects) by:
+        // 1. Creating a single JavaScript object (e.g., `const userProfile = { ... };`)
+        //    to store `firstName`, `lastName`, and `email`.
+        // 2. Modifying the `displayUserProfile` function to access these details
+        //    from your new `userProfile` object instead of the separate variables.
+    </script>
+</body>
+</html>
