@@ -25,6 +25,7 @@ Objects (Methods and Properties)
 | D | [public/decisions01.html](public/decisions01.html)             |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
 | E | [public/events01.html](public/events01.html)                 |  [events01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/events01.html)  |  
 | O | [public/objects01.html](public/objects01.html)               |  [objects01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/objects01.html)  | 
+|   |   |  |
 |   |   |  | 
 | F | [public/functions01.html](public/functions01.html)           |  [functions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/functions01.html)  |  
 | L | [public/loops01.html](public/loops01.html)                   |  [loops01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/loops01.html)  |  
