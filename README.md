@@ -23,6 +23,7 @@ Objects (Methods and Properties)
 |  [public/variables01.html](public/variables01.html)                     |  [variables01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/variables01.html)  |  
 |  [public/input-output01.html](public/input-output01.html)     |  [input-output01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/input-output01.html)  |  
 |  [public/events01.html](public/events01.html)     |  [events01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/events01.html)  |  
+|  [public/objects01.html](public/objects01.html)     |  [objects01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/objects01.html)  |  <br>
 |  [public/decisions01.html](public/decisions01.html)                     |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
 |  [public/decisions01.html](public/decisions01.html)                     |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
 |  [public/loops01.html](public/loops01.html)                             |  [loops01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/loops01.html)  |  
