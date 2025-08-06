@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Click Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
+        <!-- Problem Description -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Click Counter Challenge: Variables</h1>
+        <p class="text-gray-600 mb-6">
+            Click the button below to increment the counter. You'll notice it always goes back to 1. This is a classic problem of **variable scope**! Your challenge is to fix the **Variables (V)** component so the count truly keeps increasing with every click.
+        </p>
+
+        <!-- User Interface -->
+        <div class="flex flex-col items-center gap-4">
+            <button
+                id="clickButton"
+                class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-200 transform hover:scale-105"
+            >
+                Click Me!
+            </button>
+            <div class="mt-4 w-full">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Current Count:</h2>
+                <p id="countDisplay" class="text-5xl font-extrabold text-indigo-700">0</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- VIDEO-FLAC Challenge: Variables (V) ---
+
+        // V - Variables: This is where the core of the problem lies.
+        // The 'count' variable needs to maintain its value across multiple clicks.
+        // Where should it be declared so it doesn't reset every time 'incrementCount' runs?
+
+        const countDisplayElement = document.getElementById('countDisplay');
+        const clickButton = document.getElementById('clickButton');
+
+        // F - Functions: A function to handle the click and update the count.
+        function incrementCount() {
+            // CURRENT PROBLEM: If 'count' is declared here, it gets reset to 0
+            // every single time this function is called.
+            let count = 0; // <--- THIS LINE IS THE PROBLEM!
+
+            // I - Input: The button click is the input that triggers this function.
+
+            // D - Decisions: No explicit decisions needed for simple increment.
+
+            // E - Events: Handled by the event listener below.
+
+            // O - Objects: Interacting with the document and countDisplayElement.
+
+            // L - Loops: Not directly used here.
+
+            // A - Arrays: Not directly used here.
+
+            // C - Classes: Not used here.
+
+            count++; // Increment the count
+            countDisplayElement.textContent = count; // Update the display
+        }
+
+        // E - Events: Listen for a click event on the button.
+        clickButton.addEventListener('click', incrementCount);
+
+        // Your task: Fix the "V" component (Variables) by changing where the 'count' variable is declared
+        // so that it retains its value across multiple function calls!
+    </script>
+</body>
+</html>
