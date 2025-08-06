@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
+        <!-- Problem Description -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Guess the Number Challenge</h1>
+        <p class="text-gray-600 mb-6">
+            The goal is to guess a secret number between 1 and 10. The code below contains the core logic, but it's missing a key part that prevents it from telling you if your guess is correct.
+        </p>
+
+        <!-- User Interface -->
+        <div class="flex flex-col items-center gap-4">
+            <input 
+                type="number" 
+                id="guessInput" 
+                placeholder="Enter your guess (1-10)" 
+                class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition-colors duration-200 text-center text-lg"
+            />
+            <button 
+                id="checkButton" 
+                class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-200 transform hover:scale-105"
+            >
+                Check My Guess
+            </button>
+            <p id="message" class="mt-4 text-xl font-semibold text-gray-700">
+                Awaiting your guess...
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // --- VIDEO-FLAC Challenge ---
+        
+        // V - Variables: We define a secret number and a variable to hold the user's guess.
+        const secretNumber = 7;
+        let userGuess;
+        const messageElement = document.getElementById('message');
+        const guessInput = document.getElementById('guessInput');
+        const checkButton = document.getElementById('checkButton');
+
+        // F - Functions: A function to handle the game logic.
+        function checkGuess() {
+            // I - Input: Get the value from the input field.
+            userGuess = parseInt(guessInput.value, 10);
+            
+            // O - Output: Display a message based on the result.
+            // D - Decisions: This is the missing element! The code is currently unable to decide
+            //               if the user's guess is correct or not.
+            //               It always outputs the same message.
+            
+            messageElement.textContent = `You guessed ${userGuess}. That's incorrect!`;
+        }
+
+        // E - Events: We listen for a click event on the button.
+        checkButton.addEventListener('click', checkGuess);
+
+        // O - Objects: We interact with the document object to get and manipulate elements.
+        // The code uses document.getElementById(), which is an example of an Object method.
+        
+        // This is a self-contained, but incomplete, application.
+        // You need to add the missing "D" component (Decisions) to make it work!
+    </script>
+</body>
+</html>
