@@ -3,3 +3,20 @@ Code learning
 
 
 webpage at https://hpssjellis.github.io/my-examples-of-video-flac/ not really needed.
+
+
+VIDEO-FLAC 
+Variables
+Input-output
+Decisions
+Events
+Objects (stucts)
+
+Functions
+Loops
+Arrats
+Objects (Methods and Properties)
+
+
+Code [public/decisions01.html](public/decisions01.html)
+Demo to fix [](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)
