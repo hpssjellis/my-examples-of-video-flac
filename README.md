@@ -18,6 +18,11 @@ Arrats
 Objects (Methods and Properties)
 
 
+Note: For a class you can print any of these static assignments or generate a new assignment and have students using pencil to try to change the code, then when they are done and you as a teacher have seen their attempt, then let them write the code and get it working.
+
+
+
+
 | Mnemonic | Code to Fix | Demo to fix | 
 |----|----|----|
 | V |  [public/variables01.html](public/variables01.html)          |  [variables01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/variables01.html)  |  
