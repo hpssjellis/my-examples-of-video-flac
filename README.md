@@ -16,8 +16,10 @@ Functions
 Loops
 Arrats
 Objects (Methods and Properties)
-| Header 1 | Header 2 | 
+
+
+| code to Fix | Demo to fix | 
 |----|----|  
-| Code to fix [public/decisions01.html](public/decisions01.html)  | Demo to fix [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
-| Code to fix [public/decisions01.html](public/decisions01.html)  | Demo to fix [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
-| Code to fix[public/loops01.html](public/loops01.html)           | Demo to fix [loops01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/loops01.html)  |  
+|  [public/decisions01.html](public/decisions01.html)  |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
+|  [public/decisions01.html](public/decisions01.html)  |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
+|  [public/loops01.html](public/loops01.html)          |  [loops01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/loops01.html)  |  
