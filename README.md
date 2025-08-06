@@ -18,15 +18,18 @@ Arrats
 Objects (Methods and Properties)
 
 
-| Code to Fix | Demo to fix | 
-|----|----|  
-|  [public/variables01.html](public/variables01.html)                     |  [variables01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/variables01.html)  |  
-|  [public/input-output01.html](public/input-output01.html)     |  [input-output01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/input-output01.html)  |  
-|  [public/events01.html](public/events01.html)     |  [events01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/events01.html)  |  
-|  [public/objects01.html](public/objects01.html)     |  [objects01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/objects01.html)  |  <br>
-|  [public/decisions01.html](public/decisions01.html)                     |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
-|  [public/decisions01.html](public/decisions01.html)                     |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
-|  [public/loops01.html](public/loops01.html)                             |  [loops01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/loops01.html)  |  
+| Mnemonic | Code to Fix | Demo to fix | 
+|----|----|----|
+| V |  [public/variables01.html](public/variables01.html)          |  [variables01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/variables01.html)  |  
+| I | [public/input-output01.html](public/input-output01.html)     |  [input-output01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/input-output01.html)  | 
+| D [public/decisions01.html](public/decisions01.html)             |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
+| E | [public/events01.html](public/events01.html)                 |  [events01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/events01.html)  |  
+| O | [public/objects01.html](public/objects01.html)               |  [objects01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/objects01.html)  | 
+|   |   |  | 
+| F | [public/functions01.html](public/functions01.html)           |  [functions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/functions01.html)  |  
+| L | [public/loops01.html](public/loops01.html)                   |  [loops01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/loops01.html)  |  
+| A | [public/arrays01.html](public/arrays01.html)                 |  [arrays01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/arrays01.html)  |  
+| C | [public/classes01.html](public/classes01.html)               |  [classes01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/classes01.html)  |  
 
 
 
