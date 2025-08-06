@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
+        <!-- Problem Description -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Simple Task Manager Challenge</h1>
+        <p class="text-gray-600 mb-6">
+            Add tasks to the list below. The code is designed to display tasks, but it's missing a way to store multiple tasks. Can you figure out which VIDEO-FLAC component is needed to make it work correctly?
+        </p>
+
+        <!-- User Interface -->
+        <div class="flex flex-col items-center gap-4">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task..."
+                class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-green-500 transition-colors duration-200 text-center text-lg"
+            />
+            <button
+                id="addTaskButton"
+                class="w-full bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition-colors duration-200 transform hover:scale-105"
+            >
+                Add Task
+            </button>
+            <div class="mt-4 w-full">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Your Tasks:</h2>
+                <ul id="taskList" class="list-none p-0 text-left">
+                    <!-- Tasks will be displayed here -->
+                    <li class="bg-gray-100 p-3 rounded-lg mb-2 text-gray-700">No tasks yet.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- VIDEO-FLAC Challenge ---
+
+        // V - Variables: We define variables for our elements and a placeholder for the task.
+        const taskInput = document.getElementById('taskInput');
+        const addTaskButton = document.getElementById('addTaskButton');
+        const taskList = document.getElementById('taskList');
+        let currentTaskText = ''; // Stores the text of the task currently being added
+
+        // F - Functions: A function to handle adding a task.
+        function addTask() {
+            // I - Input: Get the value from the input field.
+            currentTaskText = taskInput.value.trim();
+
+            // D - Decisions: Check if the input is not empty.
+            if (currentTaskText === '') {
+                alert('Please enter a task!'); // Using alert for simplicity, but in a real app, use a custom modal.
+                return;
+            }
+
+            // O - Output: Create a new list item and display it.
+            // The problem: This code only displays the *latest* task.
+            // It doesn't remember previous tasks.
+            // You need to add the missing "A" component (Arrays) here
+            // to store all tasks and then loop (L) through them to display.
+
+            // Clear previous content and add the new task
+            taskList.innerHTML = ''; // This clears everything, so only the new task shows.
+            const listItem = document.createElement('li');
+            listItem.className = 'bg-blue-100 p-3 rounded-lg mb-2 text-blue-800 shadow-sm';
+            listItem.textContent = currentTaskText;
+            taskList.appendChild(listItem);
+
+            // Clear the input field
+            taskInput.value = '';
+        }
+
+        // E - Events: We listen for a click event on the button.
+        addTaskButton.addEventListener('click', addTask);
+
+        // O - Objects: We interact with the document object and element objects.
+        // The code uses document.getElementById(), createElement(), appendChild(), etc.
+
+        // L - Loops: (Implicitly needed once you add the missing "A" component to display all items)
+        // C - Classes: Not used in this simple example.
+
+        // This is a self-contained, but incomplete, application.
+        // You need to add the missing "A" component (Arrays) and potentially "L" (Loops)
+        // to make it work!
+    </script>
+</body>
+</html>
