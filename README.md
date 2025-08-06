@@ -18,7 +18,7 @@ Arrats
 Objects (Methods and Properties)
 
 
-| code to Fix | Demo to fix | 
+| Code to Fix | Demo to fix | 
 |----|----|  
 |  [public/decisions01.html](public/decisions01.html)  |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
 |  [public/decisions01.html](public/decisions01.html)  |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
