@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
+        <!-- Problem Description -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Product Display Challenge: Classes</h1>
+        <p class="text-gray-600 mb-6">
+            Click "Display Products" to see product details. Notice how each product's information (name, price, quantity) is stored in separate variables. Your challenge is to define a **Class (C)** to represent a product, and then use instances of this class to manage and display the product data.
+        </p>
+
+        <!-- User Interface -->
+        <div class="flex flex-col items-center gap-4">
+            <button
+                id="displayProductsButton"
+                class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-200 transform hover:scale-105"
+            >
+                Display Products
+            </button>
+            <div class="mt-4 w-full text-left p-4 bg-gray-100 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Product List:</h2>
+                <div id="productListDisplay" class="text-lg text-gray-700">
+                    Click the button to load products...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- VIDEO-FLAC Challenge: Classes (C) ---
+
+        // V - Variables: Get references to our HTML elements.
+        const displayProductsButton = document.getElementById('displayProductsButton');
+        const productListDisplayElement = document.getElementById('productListDisplay');
+
+        // Problematic Data Representation:
+        // Currently, product data is stored in individual, separate variables.
+        let product1Name = "Laptop";
+        let product1Price = 1200;
+        let product1Quantity = 5;
+
+        let product2Name = "Mouse";
+        let product2Price = 25;
+        let product2Quantity = 20;
+
+        // C - Classes: THIS IS THE MISSING PART!
+        // You need to define a JavaScript class here (e.g., `class Product { ... }`).
+        // This class should have a constructor that takes `name`, `price`, and `quantity`
+        // as arguments and assigns them as properties to the class instance.
+
+        // F - Functions: A function to display the products.
+        function displayProducts() {
+            // I - Input: The static product data (currently individual variables).
+
+            // O - Output: Displaying the product details.
+            // After your changes, this section should create instances of your `Product` class
+            // and then access their properties to build the display string.
+
+            productListDisplayElement.innerHTML = `
+                <div class="mb-4 p-3 bg-white rounded-lg shadow-sm">
+                    <p><strong>Product:</strong> ${product1Name}</p>
+                    <p><strong>Price:</strong> $${product1Price.toFixed(2)}</p>
+                    <p><strong>Quantity:</strong> ${product1Quantity}</p>
+                </div>
+                <div class="p-3 bg-white rounded-lg shadow-sm">
+                    <p><strong>Product:</strong> ${product2Name}</p>
+                    <p><strong>Price:</strong> $${product2Price.toFixed(2)}</p>
+                    <p><strong>Quantity:</strong> ${product2Quantity}</p>
+                </div>
+            `;
+
+            // D - Decisions: (Not directly missing)
+
+            // E - Events: Handled by the event listener below.
+
+            // O - Objects: We interact with document elements. The goal is to create custom objects (instances of your class).
+
+            // L - Loops: (Could be used if you create an array of Product objects)
+
+            // A - Arrays: (Could be used to store multiple Product objects)
+        }
+
+        // E - Events: Listen for a click event on the button.
+        displayProductsButton.addEventListener('click', displayProducts);
+
+        // Your task: Fix the "C" component (Classes) by:
+        // 1. Defining a `Product` class with a constructor to initialize `name`, `price`, and `quantity`.
+        // 2. Inside the `displayProducts` function, create two instances of your `Product` class,
+        //    using the data currently in `product1Name`, etc.
+        // 3. Modify the `productListDisplayElement.innerHTML` section to access the properties
+        //    from your new `Product` objects instead of the separate variables.
+    </script>
+</body>
+</html>
