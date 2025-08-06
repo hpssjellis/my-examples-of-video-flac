@@ -16,7 +16,7 @@ Functions
 Loops
 Arrats
 Objects (Methods and Properties)
-
+| Header 1 | Header 2 | 
 |----|----|  
 | Code to fix [public/decisions01.html](public/decisions01.html)  | Demo to fix [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
 | Code to fix [public/decisions01.html](public/decisions01.html)  | Demo to fix [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
