@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Shopping List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
+        <!-- Problem Description -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Shopping List Challenge</h1>
+        <p class="text-gray-600 mb-6">
+            We have a list of shopping items, but the code below only displays the first few items manually. It's not very efficient if our list grows! Can you add the missing VIDEO-FLAC component to dynamically display *all* items from the list?
+        </p>
+
+        <!-- User Interface -->
+        <div class="flex flex-col items-center gap-4">
+            <button
+                id="displayListButton"
+                class="w-full bg-purple-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-purple-700 transition-colors duration-200 transform hover:scale-105"
+            >
+                Display Shopping List
+            </button>
+            <div class="mt-4 w-full">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">My Shopping List:</h2>
+                <ul id="shoppingList" class="list-disc list-inside p-0 text-left">
+                    <!-- Shopping list items will be displayed here -->
+                    <li class="bg-gray-100 p-3 rounded-lg mb-2 text-gray-700">Click "Display Shopping List" to see items.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- VIDEO-FLAC Challenge ---
+
+        // V - Variables: Define our shopping items and references to HTML elements.
+        const shoppingItems = [
+            "Milk",
+            "Eggs",
+            "Bread",
+            "Apples",
+            "Cheese",
+            "Chicken Breast",
+            "Spinach",
+            "Pasta",
+            "Tomatoes",
+            "Coffee"
+        ];
+        const shoppingListElement = document.getElementById('shoppingList');
+        const displayListButton = document.getElementById('displayListButton');
+
+        // F - Functions: A function to display the shopping list.
+        function displayShoppingList() {
+            // Clear previous content
+            shoppingListElement.innerHTML = '';
+
+            // I - Input: The 'shoppingItems' array serves as our input data.
+
+            // O - Output: Create and append list items.
+            // The problem: This part is highly repetitive and only displays a fixed number of items.
+            // It's missing the "L" component (Loops) to iterate over the entire 'shoppingItems' array.
+
+            // Manually adding the first few items (this is what you need to replace with a loop!)
+            let listItem1 = document.createElement('li');
+            listItem1.className = 'bg-blue-100 p-3 rounded-lg mb-2 text-blue-800 shadow-sm';
+            listItem1.textContent = shoppingItems[0];
+            shoppingListElement.appendChild(listItem1);
+
+            let listItem2 = document.createElement('li');
+            listItem2.className = 'bg-blue-100 p-3 rounded-lg mb-2 text-blue-800 shadow-sm';
+            listItem2.textContent = shoppingItems[1];
+            shoppingListElement.appendChild(listItem2);
+
+            let listItem3 = document.createElement('li');
+            listItem3.className = 'bg-blue-100 p-3 rounded-lg mb-2 text-blue-800 shadow-sm';
+            listItem3.textContent = shoppingItems[2];
+            shoppingListElement.appendChild(listItem3);
+
+            // D - Decisions: Not explicitly missing here, but could be added (e.g., if an item is out of stock).
+
+            // A - Arrays: The 'shoppingItems' array is already defined and used.
+
+            // C - Classes: Not used in this simple example.
+        }
+
+        // E - Events: Listen for a click on the button to trigger the display.
+        displayListButton.addEventListener('click', displayShoppingList);
+
+        // O - Objects: We interact with the 'document' object and created 'li' elements.
+
+        // This is a self-contained, but incomplete, application.
+        // You need to add the missing "L" component (Loops) to iterate through the 'shoppingItems'
+        // array and dynamically create an 'li' for each item!
+    </script>
+</body>
+</html>
