@@ -38,6 +38,6 @@ Objects (Methods and Properties)
 
 All of these examples were made with gemini-canvas using the prompt. You can specifiy the specific videoflac if you want or just let it randomly makke the examples.
 
-```
-I have told you the coding mnemonic VIDEO-FLAC variables, input output, decisions, events, objects, fubctions, loops, arrays, classes. Write in the canvas a simple working html javascript page that introduces a problem and working code that almost solves the problem just not quite since one of the video-flac is missing. Can easily be fixed just I have to fix the code showing I understand what I am doing. You create the problem to solve
-```
+
+***I have told you the coding mnemonic VIDEO-FLAC variables, input output, decisions, events, objects, fubctions, loops, arrays, classes. Write in the canvas a simple working html javascript page that introduces a problem and working code that almost solves the problem just not quite since one of the video-flac is missing. Can easily be fixed just I have to fix the code showing I understand what I am doing. You create the problem to solve***
+
