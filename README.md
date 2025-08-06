@@ -20,6 +20,7 @@ Objects (Methods and Properties)
 
 | Code to Fix | Demo to fix | 
 |----|----|  
+|  [public/variables01.html](public/variables01.html)          |  [variables01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/variables01.html)  |  
 |  [public/decisions01.html](public/decisions01.html)  |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
 |  [public/decisions01.html](public/decisions01.html)  |  [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |  
 |  [public/loops01.html](public/loops01.html)          |  [loops01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/loops01.html)  |  
