@@ -17,6 +17,7 @@ Loops
 Arrats
 Objects (Methods and Properties)
 
-
-1. Code [public/decisions01.html](public/decisions01.html)  <br> Demo to fix [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)
-1. Code [public/arrays01.html](public/arrays01.html)  <br> Demo to fix [arrays01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/arrays01.html)
+|----|----|
+| Code to fix [public/decisions01.html](public/decisions01.html)  | Demo to fix [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |
+| Code to fix [public/decisions01.html](public/decisions01.html)  | Demo to fix [decisions01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/decisions01.html)  |
+| Code to fix[public/loops01.html](public/loops01.html)           | Demo to fix [loops01.html](https://hpssjellis.github.io/my-examples-of-video-flac/public/loops01.html)  |
