@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Calculator Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
+        <!-- Problem Description -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Square Calculator Challenge: Functions</h1>
+        <p class="text-gray-600 mb-6">
+            Click "Calculate Squares" to see the squares of two numbers. Notice how the code for squaring a number is repeated. Your challenge is to extract this repeated logic into a reusable **Function (F)** to make the code more efficient and organized.
+        </p>
+
+        <!-- User Interface -->
+        <div class="flex flex-col items-center gap-4">
+            <div class="input-group w-full text-left">
+                <label for="number1Input" class="block text-gray-700 text-sm font-bold mb-2">Number 1:</label>
+                <input
+                    type="number"
+                    id="number1Input"
+                    value="5"
+                    class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-orange-500 transition-colors duration-200 text-center text-lg"
+                />
+            </div>
+            <div class="input-group w-full text-left">
+                <label for="number2Input" class="block text-gray-700 text-sm font-bold mb-2">Number 2:</label>
+                <input
+                    type="number"
+                    id="number2Input"
+                    value="8"
+                    class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-orange-500 transition-colors duration-200 text-center text-lg"
+                />
+            </div>
+
+            <button
+                id="calculateButton"
+                class="w-full bg-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-orange-700 transition-colors duration-200 transform hover:scale-105"
+            >
+                Calculate Squares
+            </button>
+            <div class="mt-4 w-full text-left p-4 bg-gray-100 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Results:</h2>
+                <p id="resultDisplay" class="text-lg text-gray-700">
+                    Click the button to see results...
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- VIDEO-FLAC Challenge: Functions (F) ---
+
+        // V - Variables: Get references to our HTML elements.
+        const number1Input = document.getElementById('number1Input');
+        const number2Input = document.getElementById('number2Input');
+        const calculateButton = document.getElementById('calculateButton');
+        const resultDisplayElement = document.getElementById('resultDisplay');
+
+        // F - Functions: THIS IS THE MISSING PART!
+        // The logic for squaring a number is repeated below.
+        // You should create a function here (e.g., `function calculateSquare(num) { ... }`)
+        // that takes a number as an argument, calculates its square, and returns the result.
+
+        // I - Input: Numbers from the input fields.
+
+        // O - Output: Displaying the calculated squares.
+
+        // D - Decisions: (Not directly missing)
+
+        // E - Events: Handled by the event listener below.
+
+        // O - Objects: Interacting with document elements.
+
+        // L - Loops: Not directly used here.
+
+        // A - Arrays: Not directly used here.
+
+        // C - Classes: Not used here.
+
+        // Event handler for the button click
+        calculateButton.addEventListener('click', () => {
+            const num1 = parseFloat(number1Input.value);
+            const num2 = parseFloat(number2Input.value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                resultDisplayElement.textContent = "Please enter valid numbers.";
+                resultDisplayElement.classList.add('text-red-600');
+                resultDisplayElement.classList.remove('text-gray-700');
+                return;
+            }
+
+            // Problematic Repetition: The squaring logic is repeated.
+            // Replace these lines with calls to your new `calculateSquare` function!
+            const square1 = num1 * num1; // Repeated logic
+            const square2 = num2 * num2; // Repeated logic
+
+            resultDisplayElement.textContent = `
+                The square of ${num1} is ${square1}.
+                The square of ${num2} is ${square2}.
+            `;
+            resultDisplayElement.classList.remove('text-red-600');
+            resultDisplayElement.classList.add('text-gray-700');
+        });
+
+        // Your task: Fix the "F" component (Functions) by:
+        // 1. Defining a new function (e.g., `calculateSquare(num)`) that takes a number and returns its square.
+        // 2. Replacing the direct `num * num` calculations inside the event listener
+        //    with calls to your new `calculateSquare` function.
+    </script>
+</body>
+</html>
